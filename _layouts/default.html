@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% if page.title %}
+        <title>{{ page.title }}</title>
+
+    {% else %}
+        <title>{{ site.name }}</title>
+
+    {% endif %}
+
+    <meta name="description" content="{{ site.description }}">
+     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Anton|Bad+Script|Francois+One|Fredoka+One|News+Cycle:700|Old+Standard+TT|Playfair+Display|Pontano+Sans|Satisfy|Unica+One" rel="stylesheet">
+
+    {% if site.google_verification %}
+        <meta name="google-site-verification" content="{{ site.google_verify }}">
+    {% endif %}
+
+    <link rel="icon" href="/assets/img/favicon.png">
+    <link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Roboto:100,300,400,500,700,900|Source+Sans+Pro:200,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+      <div class="header">
+          <div class="title_text">{{ site.title }}</div>
+          <div class="site-desc-text">{{site.description}}</div>
+          <div class="desc">
+            Welcome to ACC USICT September - October 2016.
+            <br>
+            Repository for all the codes worked on in the sessions.
+            <br>
+            Blogs and Tutorials related to sessions.
+          </div>
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                      {% for item in site.data.navigation %}
+                      <li>
+                          <a href="{{ item.url }}">{{ item.title }}</a>
+                      </li>
+                      {% endfor %}
+
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+      </div>
+        {{ content }}
+    </div>
+
+</body>
+
+</html>

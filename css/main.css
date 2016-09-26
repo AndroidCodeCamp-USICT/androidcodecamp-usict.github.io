@@ -1,0 +1,87 @@
+.navbar-default {
+background: #fff !important;
+    border-color: transparent !important;
+}
+
+@media (min-width: 768px){
+.navbar {
+    border-radius: 0px !important;
+}
+}
+
+@media (min-width: 992px){
+  .container {
+      width: 60% !important;
+  }
+}
+
+@media (min-width: 768px){
+  .container {
+      width: 60% !important;
+  }
+}
+
+.title_text{
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 4.5em !important;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: lightgray;
+  letter-spacing: 0.1em;
+  text-indent: 0.2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+
+
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+    text-transform: uppercase !important;
+    font-family: "Roboto";
+    letter-spacing: 0.2em;
+}
+.desc{
+  padding: 16px;
+font-family: "Roboto";
+font-size: 22px;
+color: rgb(164, 164, 164);
+font-weight: 100;
+}
+.navbar .navbar-nav {
+    display: inline-block !important;
+    float: none !important;
+}
+
+.navbar .navbar-collapse {
+    text-align: center !important;
+}
+
+.site-desc-text{
+  text-align: center;
+  font-family: "Alegreya Sans";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+}
+
+.post-main{
+  padding: 16px;
+}
+
+.mpost{
+  color: black;
+font-family: "Pontano Sans";
+font-size: 22px;
+}
+
+.mdate{
+  font-family: "Roboto";
+color: rgb(162, 162, 162);
+}
+
+.post-content{
+  font-family: "Roboto";
+font-size: 18px;
+font-weight: 500;
+}
