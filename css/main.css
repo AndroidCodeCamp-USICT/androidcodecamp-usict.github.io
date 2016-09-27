@@ -68,20 +68,44 @@ font-weight: 100;
 .post-main{
   padding: 16px;
 }
-
-.mpost{
-  color: black;
-font-family: "Pontano Sans";
-font-size: 22px;
+a:focus, a:hover {
+    color: gray !important;
+    text-decoration: none !important;
 }
 
+a{
+  color: black !important;
+}
+.mpost{
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 22px;
+  color: black !important;
+}
+.mpost-main{
+  text-align: center;
+font-family: "Roboto";
+font-size: 6em !important;
+
+font-weight: 900;
+color: black;
+
+padding-bottom: 0.2em;
+padding-top: 0.3em;
+}
+.mdate-main{
+  font-family: "Roboto";
+  color: rgb(162, 162, 162);
+  text-transform: uppercase;
+}
 .mdate{
   font-family: "Roboto";
 color: rgb(162, 162, 162);
+
 }
 
 .post-content{
-  font-family: "Roboto";
-font-size: 18px;
-font-weight: 500;
+      font-family: 'Signika';
+font-size: 22px;
+
 }

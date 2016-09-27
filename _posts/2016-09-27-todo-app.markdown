@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Creating a To Do App"
+date:   2016-09-27 23:34:51 +0530
+categories: android
+---
+
+Covering a number basic aspects of developing applications with Android.

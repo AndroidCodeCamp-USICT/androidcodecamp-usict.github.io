@@ -12,7 +12,7 @@ layout: default
             <a href="{{ post.url }}">{{ post.title }}</a>
           </div>
           <div class="mdate">
-              <span class="date">{{ post.date | date: '%Y %b %d' }}</span>
+              <span class="date">{{ post.content | strip_html | truncatewords: 7 }}</span>
           </div>
         </div>
 
